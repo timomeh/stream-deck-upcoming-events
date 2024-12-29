@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w --watch.onEnd=\"streamdeck restart de.timomeh.upcoming-events\"",
+    "format:check": "pretter . --check",
+    "format": "pretter . --write",
+    "validate": "streamdeck validate de.timomeh.upcoming-events.sdPlugin",
+    "packpack": "streamdeck pack de.timomeh.upcoming-events.sdPlugin"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@elgato/cli": "^1.1.0",
+    "@rollup/plugin-commonjs": "^28.0.0",
+    "@rollup/plugin-node-resolve": "^15.2.2",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.0",
+    "@tsconfig/node20": "^20.1.2",
+    "@types/node": "~20.15.0",
+    "prettier": "^3.4.2",
+    "rollup": "^4.0.2",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^1.0.0",
+    "run-applescript": "^7.0.0"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "packageManager": "pnpm@9.7.0+sha256.b35018fbfa8f583668b2649e407922a721355cd81f61beeb4ac1d4258e585559",
+  "version": "0.2.0"
+}
