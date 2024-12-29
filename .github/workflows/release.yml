@@ -1,0 +1,29 @@
+name: Release
+
+on:
+  tags:
+    - 'v*.*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: pnpm
+      - run: pnpm install
+      - run: pnpm build
+      - run: pnpm deck:pack
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            de.timomeh.upcoming-events.streamDeckPlugin

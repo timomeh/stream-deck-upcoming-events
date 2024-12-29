@@ -1,0 +1,47 @@
+{
+	"Name": "Upcoming Events",
+	"Version": "0.1.0.0",
+	"Author": "Timo Mämecke",
+	"Actions": [
+		{
+			"Name": "Calendar Reminder",
+			"UUID": "de.timomeh.upcoming-events.calendar-reminder",
+			"Icon": "imgs/actions/calendar-reminder/icon",
+			"Tooltip": "Display upcoming calendar events and open video calls by a press of a button",
+			"PropertyInspectorPath": "ui/calendar-reminder.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/calendar-reminder/blank",
+					"TitleAlignment": "middle"
+				},
+				{
+					"Image": "imgs/actions/calendar-reminder/happy",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "Upcoming Events",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Actions for upcoming calendar events",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "enabled"
+	},
+	"UUID": "de.timomeh.upcoming-events"
+}

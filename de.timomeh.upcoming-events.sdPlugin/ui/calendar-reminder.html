@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head lang="en">
+    <title>Calendar Reminder Settings</title>
+    <meta charset="utf-8" />
+    <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+  </head>
+
+  <body>
+    <!-- ref: https://sdpi-components.dev/docs/components -->
+    <sdpi-item label="Wake before an event starts (in minutes)">
+      <sdpi-textfield
+        setting="wakeBeforeMins"
+        pattern="[0-9]+"
+        maxlength="2"
+        placeholder="10"
+        required
+      ></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Sleep after an event started (in minutes)">
+      <sdpi-textfield
+        setting="sleepAfterMins"
+        pattern="[0-9]+"
+        maxlength="2"
+        placeholder="10"
+        required
+      ></sdpi-textfield>
+    </sdpi-item>
+  </body>
+</html>
