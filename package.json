@@ -2,8 +2,8 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w --watch.onEnd=\"streamdeck restart de.timomeh.upcoming-events\"",
-    "format:check": "pretter . --check",
-    "format": "pretter . --write",
+    "format:check": "prettier . --check",
+    "format": "prettier . --write",
     "deck:link": "streamdeck link de.timomeh.upcoming-events.sdPlugin",
     "deck:validate": "streamdeck validate de.timomeh.upcoming-events.sdPlugin",
     "deck:pack": "streamdeck pack de.timomeh.upcoming-events.sdPlugin"
