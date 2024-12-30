@@ -2,7 +2,7 @@
 
 _macOS only_
 
-A plugin for Elgato's Stream Deck to show the next calendar event on a button, and when you press the button, it opens Google Meet or Zoom or any video call connected to the event. Only shows the next event when it is about to start soon. Only for macOS.
+A plugin for Elgato's Stream Deck to show the next calendar event on a key, and when you press the key, it opens Google Meet or Zoom or any video call connected to the event. Only shows the next event when it is about to start soon. Only for macOS.
 
 Uses macOS' native calendar integration. It works with any events that are connected to your Calendar.app.
 
@@ -16,8 +16,8 @@ Uses macOS' native calendar integration. It works with any events that are conne
 ### Behavior
 
 - Checks for upcoming events every 30 seconds.
-- When an event is about to start, it shows the start time and title of the event on the button. Clicking the button will open the first link in the event's description, which is often a link to a meeting.
-- When no event is about to start, it shows a static image, which you can override. Clicking the button will re-check upcoming events.
+- When an event is about to start, it shows the start time and title of the event on the key. Clicking the key will open the first link in the event's description, which is often a link to a meeting.
+- When no event is about to start, it shows a static image, which you can override. Clicking the key will re-check upcoming events.
 
 ### Screenshots
 
@@ -26,8 +26,8 @@ Uses macOS' native calendar integration. It works with any events that are conne
 
 ### Configuration
 
-- **Wake before** (in minutes) allows you to configure when the button should start to show the next event. Default: 10
-- **Sleep after** (in minutes) allows you to configure when the button shouldn't anymore show the next event after the event started. Default: 10
+- **Wake before** (in minutes) allows you to configure when the key should start to show the next event. Default: 10
+- **Sleep after** (in minutes) allows you to configure when the key shouldn't anymore show the next event after it started. Default: 10
 
 ## Development
 

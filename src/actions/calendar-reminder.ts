@@ -28,11 +28,13 @@ export class CalendarReminder extends SingletonAction<ReminderSettings> {
   override async onWillAppear(
     ev: WillAppearEvent<ReminderSettings>,
   ): Promise<void> {
+    // only works on keys
+    if (!ev.action.isKey()) return
+
     // restore cached event
     if (this.event) {
       ev.action.setImage(this.svg(this.event))
     } else if (this.didInitialize) {
-      // @ts-expect-error
       ev.action.setState(1)
     }
 
@@ -43,7 +45,6 @@ export class CalendarReminder extends SingletonAction<ReminderSettings> {
     this.event = event
     if (!event) {
       ev.action.setImage('')
-      // @ts-expect-error
       ev.action.setState(1)
     } else {
       ev.action.setImage(this.svg(event))
