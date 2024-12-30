@@ -14,10 +14,12 @@
 			],
 			"States": [
 				{
+					"Name": "Upcoming event",
 					"Image": "imgs/actions/calendar-reminder/blank",
 					"TitleAlignment": "middle"
 				},
 				{
+					"Name": "No upcoming event",
 					"Image": "imgs/actions/calendar-reminder/happy",
 					"TitleAlignment": "middle"
 				}

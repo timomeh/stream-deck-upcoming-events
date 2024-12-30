@@ -8,23 +8,53 @@
 
   <body>
     <!-- ref: https://sdpi-components.dev/docs/components -->
-    <sdpi-item label="Wake before an event starts (in minutes)">
+    <sdpi-item label="Wake before event starts (in minutes)">
       <sdpi-textfield
         setting="wakeBeforeMins"
         pattern="[0-9]+"
         maxlength="2"
         placeholder="10"
-        required
       ></sdpi-textfield>
     </sdpi-item>
-    <sdpi-item label="Sleep after an event started (in minutes)">
+    <sdpi-item label="Sleep after event started (in minutes)">
       <sdpi-textfield
         setting="sleepAfterMins"
         pattern="[0-9]+"
         maxlength="2"
         placeholder="10"
-        required
       ></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Reminder background">
+      <sdpi-file
+        setting="backgroundImg"
+        accept="image/png, image/jpeg"
+      ></sdpi-file>
+    </sdpi-item>
+    <sdpi-item label="Time text size">
+      <sdpi-textfield setting="timeTextSize" placeholder="21px">
+      </sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Time text color">
+      <sdpi-color setting="timeTextColor"></sdpi-color>
+    </sdpi-item>
+    <sdpi-item label="Time position from top">
+      <sdpi-textfield setting="timePosY" placeholder="20px"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Event text size">
+      <sdpi-textfield setting="eventTextSize" placeholder="14px">
+      </sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Event text color">
+      <sdpi-color setting="eventTextColor"></sdpi-color>
+    </sdpi-item>
+    <sdpi-item label="Event position from top">
+      <sdpi-textfield setting="eventPosY" placeholder="50px"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Demo">
+      <sdpi-checkbox
+        setting="isDemo"
+        label="Activate demo for testing"
+      ></sdpi-checkbox>
     </sdpi-item>
   </body>
 </html>

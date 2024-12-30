@@ -2,7 +2,7 @@
 
 _macOS only_
 
-A plugin for Elgato's Stream Deck to show the next calendar event on a key, and when you press the key, it opens Google Meet or Zoom or any video call connected to the event. Only shows the next event when it is about to start soon. Only for macOS.
+A plugin for Elgato's Stream Deck to show the next calendar event on a key, and when you press the key, it opens Google Meet or Zoom or any video call connected to the event. Only shows the next event when it is about to start soon. Very customizable. Only for macOS.
 
 Uses macOS' native calendar integration. It works with any events that are connected to your Calendar.app.
 
@@ -24,10 +24,12 @@ Uses macOS' native calendar integration. It works with any events that are conne
 ![](/.github/upcoming.png)
 ![](/.github/idle.png)
 
-### Configuration
+## States
 
-- **Wake before** (in minutes) allows you to configure when the key should start to show the next event. Default: 10
-- **Sleep after** (in minutes) allows you to configure when the key shouldn't anymore show the next event after it started. Default: 10
+The Calendar Reminder action comes with 2 states:
+
+- "Upcoming event". Uses a dynamically generated icon which you can customize.
+- "No upcoming event". Uses a static icon which you can override.
 
 ## Development
 
